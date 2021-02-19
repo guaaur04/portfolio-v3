@@ -1,11 +1,18 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles, withStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
+import Button from '@material-ui/core/Button';
+import { green, purple } from '@material-ui/core/colors';
+
+//Here, we're importing specific icons which we will render into you Nav component 
+// import SearchIcon from '@material-ui/icons/Search';
+// import MoreIcon from '@material-ui/icons/MoreVert';
+
+//We must import icons individually to call in our code 
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,25 +21,83 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
+  toolbar: {
+    minHeight: 128,
+    alignItems: 'flex-start',
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(2),
+  },
   title: {
     flexGrow: 1,
+    alignSelf: 'flex-end',
+  },
+  margin:{
+    margin: theme.spacing(1)
   },
 }));
 
-export default function ButtonAppBar() {
+//Sets the color (and hover) of Nav buttons
+
+const ColorButton = withStyles((theme) => ({
+  root: {
+    color: theme.palette.getContrastText(purple[500]),
+    backgroundColor: purple[500],
+    '&:hover': {
+      backgroundColor: purple[700],
+    },
+  },
+}))(Button);
+
+//Another way to set color of Nav buttons
+
+const theme = createMuiTheme({
+  palette: {
+    primary: green, 
+  },
+});
+
+
+export default function ProminentAppBar() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+        <Toolbar className={classes.toolbar}>
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="open drawer"
+          >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            News
+          <Typography className={classes.title} variant="h5" noWrap>
+            V
           </Typography>
-          <Button color="inherit">Login</Button>
+          {/* <IconButton aria-label="search" color="inherit">
+            <SearchIcon />
+          </IconButton> */}
+          {/* <IconButton aria-label="display more actions" edge="end" color="inherit">
+            <MoreIcon />
+          </IconButton> */}
+
+          
+    <ColorButton variant="contained" color="primary" className={classes.margin}>
+        About
+      </ColorButton>
+
+      <ColorButton variant="contained" color="primary" className={classes.margin}>
+        Portfolio
+      </ColorButton>
+
+      <ThemeProvider theme={theme}>
+        <Button variant="contained" color="primary" className={classes.margin}>
+          Contact
+         </Button>
+      </ThemeProvider>
+
+
         </Toolbar>
       </AppBar>
     </div>
