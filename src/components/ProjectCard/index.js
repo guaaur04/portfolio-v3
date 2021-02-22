@@ -10,7 +10,6 @@ import Typography from '@material-ui/core/Typography';
 import FavoriteIcon from '@material-ui/icons/GitHub';
 import ShareIcon from '@material-ui/icons/Link';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { makeStyles} from '@material-ui/core/styles';
 // import "./style.css";
 
@@ -37,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function RecipeReviewCard() {
+export default function RecipeReviewCard(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -48,12 +47,7 @@ export default function RecipeReviewCard() {
   return (
     <Card className={classes.root}>
       <CardHeader
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Study Kanji"
+        title={props.name}
         subheader="Language Learning Application"
       />
       <CardMedia
@@ -92,5 +86,8 @@ export default function RecipeReviewCard() {
         </CardContent>
       </Collapse>
     </Card>
+
+
   );
 }
+
