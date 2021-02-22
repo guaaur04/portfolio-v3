@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Wrapper from "../components/Wrapper";
+import Footer from "../components/Footer";
 
 import { makeStyles} from '@material-ui/core/styles';
 
@@ -38,7 +39,12 @@ function About() {
 
 
             </Wrapper>
+
+
+            <div> <Footer /> </div>
+
         </div>
+
     );
 }
 
