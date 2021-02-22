@@ -9,8 +9,8 @@ import Button from '@material-ui/core/Button';
 import { green, purple } from '@material-ui/core/colors';
 
 //Here, we're importing specific icons which we will render into you Nav component 
-// import SearchIcon from '@material-ui/icons/Search';
-// import MoreIcon from '@material-ui/icons/MoreVert';
+import SearchIcon from '@material-ui/icons/Search';
+import MoreIcon from '@material-ui/icons/MoreVert';
 
 //We must import icons individually to call in our code 
 
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     alignSelf: 'flex-end',
   },
-  margin:{
+  margin: {
     margin: theme.spacing(1)
   },
 }));
@@ -52,7 +52,7 @@ const ColorButton = withStyles((theme) => ({
 
 const theme = createMuiTheme({
   palette: {
-    primary: green, 
+    primary: green,
   },
 });
 
@@ -64,6 +64,7 @@ export default function ProminentAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar className={classes.toolbar}>
+          {/* This is where the burger bar icon lives  */}
           <IconButton
             edge="start"
             className={classes.menuButton}
@@ -73,30 +74,29 @@ export default function ProminentAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h5" noWrap>
-            V
+            V Guardado
           </Typography>
-          {/* <IconButton aria-label="search" color="inherit">
+          <IconButton aria-label="search" color="inherit">
             <SearchIcon />
-          </IconButton> */}
-          {/* <IconButton aria-label="display more actions" edge="end" color="inherit">
+          </IconButton> 
+          <IconButton aria-label="display more actions" edge="end" color="inherit">
             <MoreIcon />
-          </IconButton> */}
+          </IconButton> 
 
-          
-    <ColorButton variant="contained" color="primary" className={classes.margin}>
-        About
+
+          <ColorButton href="../About" variant="contained" color="primary" className={classes.margin}>
+            About
       </ColorButton>
 
-      <ColorButton variant="contained" color="primary" className={classes.margin}>
-        Portfolio
+          <ColorButton href="../Portfolio" variant="contained" color="primary" className={classes.margin}>
+            Portfolio
       </ColorButton>
 
-      <ThemeProvider theme={theme}>
-        <Button variant="contained" color="primary" className={classes.margin}>
-          Contact
+          <ThemeProvider theme={theme}>
+            <Button href="../Contact" variant="contained" color="primary" className={classes.margin}>
+              Contact
          </Button>
-      </ThemeProvider>
-
+        </ThemeProvider>
 
         </Toolbar>
       </AppBar>
