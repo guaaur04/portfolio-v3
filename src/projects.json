@@ -2,50 +2,50 @@
     {
       "id": 1,
       "name": "Study Kanji",
-      "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+      "image": "/assets/images/kanji_study_app.png",
       "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
       "github": "https://github.com/desasser/Japanese-Study-App",
       "live": "https://desasser.github.io/Japanese-Study-App/"
     },
     {
         "id": 2,
-        "name": "Study Kanji",
+        "name": "Weather Dashboard",
         "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-        "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
-        "github": "https://github.com/desasser/Japanese-Study-App",
-        "live": "https://desasser.github.io/Japanese-Study-App/"
+        "description": "Incorporates Weather API- current weather, 5-day forecast, UV Index, and icon database. User can search for a city, and recieve up to date weather information. Website saves the users previous searches to easily revisit the weather conditions of previously searched cities",
+        "github": "https://github.com/guaaur04/api-weather-dashboard",
+        "live": " https://guaaur04.github.io/api-weather-dashboard/"
     },
     {
         "id": 3,
-        "name": "Study Kanji",
+        "name": "Password Generator",
         "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-        "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
-        "github": "https://github.com/desasser/Japanese-Study-App",
-        "live": "https://desasser.github.io/Japanese-Study-App/"
+        "description": "The 🔒 Random Password Generator 🔒 creates passwords between 8-128 characters.",
+        "github": "https://github.com/guaaur04/Javascript-Password-Generator",
+        "live": "https://guaaur04.github.io/Javascript-Password-Generator/"
     },
     {
         "id": 4,
-        "name": "Study Kanji",
+        "name": "Pizza Cutter",
         "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-        "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
-        "github": "https://github.com/desasser/Japanese-Study-App",
-        "live": "https://desasser.github.io/Japanese-Study-App/"
+        "description": "Restaurant Administrative Dashboard built for Pizza Cutter, Michigan since 1975. This appliction allows restaurant managers ability to easily edit the content of their website.",
+        "github": "https://github.com/zhuxiaoyu1019/online-order-system",
+        "live": "https://pizzacutterapp.herokuapp.com/pizzacutter"
     },
     {
         "id": 5,
-        "name": "Study Kanji",
+        "name": "Budget Tracker",
         "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-        "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
-        "github": "https://github.com/desasser/Japanese-Study-App",
-        "live": "https://desasser.github.io/Japanese-Study-App/"
+        "description": "Progressive Web Application with offline functionality that provides users a quick tool to manage and view both deposits, and expenses.",
+        "github": "https://github.com/guaaur04/PWA-Budget-Tracker",
+        "live": "https://shrouded-fortress-81979.herokuapp.com/"
     },
     {
         "id": 6,
-        "name": "Study Kanji",
+        "name": "Workout Tracker",
         "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
         "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
-        "github": "https://github.com/desasser/Japanese-Study-App",
-        "live": "https://desasser.github.io/Japanese-Study-App/"
+        "github": " https://github.com/guaaur04/workout_tracker",
+        "live": "https://protected-springs-56327.herokuapp.com/"
     }
   ]
   
