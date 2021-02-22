@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   height: 100%;
   font-family: sans-serif;
@@ -23,6 +23,5 @@ body {
 .footer {
   flex-shrink: 0;
   text-align: center;
-  background-color: tomato;
   color: white;
-}
+} */

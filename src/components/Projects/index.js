@@ -58,7 +58,7 @@ export default function RecipeReviewCard() {
       />
       <CardMedia
         className={classes.media}
-        image="src/assets/images/kanji_study_app.png"
+        image={'../assets/images/kanji_study_app.png'}
         title="Study Kanji"
       />
       <CardContent>
@@ -86,15 +86,8 @@ export default function RecipeReviewCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
           <Typography paragraph>
           Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language
-          </Typography>
-          <Typography paragraph>
-            This could be another paragraph. 
-          </Typography>
-          <Typography paragraph>
-          Perhaps, another ... Learning Material UI...
           </Typography>
         </CardContent>
       </Collapse>

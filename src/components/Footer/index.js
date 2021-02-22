@@ -4,6 +4,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import {purple } from '@material-ui/core/colors';
+// import './style.css'
 
 function Copyright() {
   return (
@@ -24,15 +26,18 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     minHeight: '100vh',
   },
-  main: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(2),
-  },
+//   main: {
+//     marginTop: theme.spacing(8),
+//     marginBottom: theme.spacing(2),
+//   },
   footer: {
-    padding: theme.spacing(3, 2),
+    padding: theme.spacing(1, 1),
     marginTop: 'auto',
-    backgroundColor:
-      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+    color: theme.palette.getContrastText(purple[500]),
+    backgroundColor: purple[500],
+    '&:hover': {
+      backgroundColor: purple[700],
+    },
   },
 }));
 
@@ -45,6 +50,7 @@ export default function StickyFooter() {
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <Typography variant="body1">V Guardado</Typography>
+          <Typography variant="body2">Copyright © 2021</Typography>
           <Copyright />
         </Container>
       </footer>
