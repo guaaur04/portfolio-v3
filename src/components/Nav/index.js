@@ -8,10 +8,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
 import { green, purple } from '@material-ui/core/colors';
 
-//Here, we're importing specific icons which we will render into you Nav component 
-import SearchIcon from '@material-ui/icons/Search';
-import MoreIcon from '@material-ui/icons/MoreVert';
-
 //We must import icons individually to call in our code 
 
 const useStyles = makeStyles((theme) => ({
@@ -73,15 +69,10 @@ export default function ProminentAppBar() {
           >
             <MenuIcon />
           </IconButton>
+          
           <Typography className={classes.title} variant="h5" noWrap>
             V Guardado
           </Typography>
-          <IconButton aria-label="search" color="inherit">
-            <SearchIcon />
-          </IconButton> 
-          <IconButton aria-label="display more actions" edge="end" color="inherit">
-            <MoreIcon />
-          </IconButton> 
 
 
           <ColorButton href="../About" variant="contained" color="primary" className={classes.margin}>

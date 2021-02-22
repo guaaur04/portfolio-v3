@@ -58,7 +58,7 @@ export default function RecipeReviewCard() {
       />
       <CardMedia
         className={classes.media}
-        image="/src/assets/images/kanji_study_app.png"
+        image="src/assets/images/kanji_study_app.png"
         title="Study Kanji"
       />
       <CardContent>

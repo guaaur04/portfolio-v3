@@ -2,8 +2,9 @@ import React from "react";
 import Nav from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer";
-
+import Image from "material-ui-image";
 import { makeStyles} from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
 
 const useStyles = makeStyles((theme) => ({
     root:{
@@ -12,8 +13,25 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 3,
         padding: '0 30px',
         margin: '40px',
-        backgroundColor: 'teal',
+        backgroundColor: 'lightblue',
+        fontSize: 25,
+
     },
+    title:{
+        marginLeft: '500px',
+        marginRight: '500px',
+        marginTop: '20px',
+        marginBottom: '20px',
+
+        fontSize: '75px',
+    },
+
+    image:{
+        height: '300px',
+        width: '300px',
+
+        
+    }
 }));
 
 
@@ -25,7 +43,12 @@ function About() {
             <Wrapper>
 
                 {/* Here I will render my column details */}
-                <p>Hello </p>
+                <h1 className={classes.title}>Welcome</h1>
+
+                <Card className={classes.image}>
+                <Image src="https://www.atlantawatershed.org/wp-content/uploads/2017/06/default-placeholder.png" />
+                </Card>
+                   
 
                 <div className ={classes.root}>
 

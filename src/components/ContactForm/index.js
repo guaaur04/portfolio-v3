@@ -18,9 +18,9 @@ export default function BasicTextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="standard-basic" label="Standard" />
-      <TextField id="standard-basic" label="Standard" />
-      <TextField id="standard-basic" label="Standard" />
+      <TextField id="standard-basic" label="Name" />
+      <TextField id="standard-basic" label="Email" />
+      <TextField id="standard-basic" label="Message" />
 
       <IconButton
           >
