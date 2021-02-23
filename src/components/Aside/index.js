@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: purple[700],
       width: '100%',
+      float: 'right',
     },
   }
 

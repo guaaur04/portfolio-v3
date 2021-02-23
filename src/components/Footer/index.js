@@ -10,12 +10,10 @@ import './style.css'
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary">
-      {'Copyright © '}
+      {'Copyright ©'}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
       </Link>{' '}
       {new Date().getFullYear()}
-      {'.'}
     </Typography>
   );
 }
@@ -30,13 +28,14 @@ const useStyles = makeStyles((theme) => ({
 //     marginTop: theme.spacing(8),
 //     marginBottom: theme.spacing(2),
 //   },
-  footer: {
-    padding: theme.spacing(1, 1),
-    marginTop: '0 auto -50px',
-    minHeight: '100%',
 
-    color: theme.palette.getContrastText(purple[500]),
-    backgroundColor: purple[500],
+  footer: {
+    padding: theme.spacing(2, 2),
+    marginTop: '0 auto -50px',
+    paddingBottom: '2.5 rem',
+    minHeight: '100vh',
+    color: theme.palette.getContrastText(purple[600]),
+    backgroundColor: purple[600],
     '&:hover': {
       backgroundColor: purple[700],
     },
@@ -51,8 +50,8 @@ export default function StickyFooter() {
       <CssBaseline />
       <footer className={classes.footer}>
         <Container maxWidth="sm">
-          <Typography variant="body1">V Guardado</Typography>
-          <Typography variant="body2">Copyright © 2021</Typography>
+          <Typography variant="body1">Auricia V Guardado</Typography>
+          <Typography variant="body2">auricia.guardado@gmail.com</Typography>
           <Copyright />
         </Container>
       </footer>

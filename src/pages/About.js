@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
         height: '300px',
         width: '300px',
         float: 'left',
+        marginRight: '5px',
     },
 
     blurb: {
