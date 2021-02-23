@@ -15,8 +15,7 @@ const useStyles = makeStyles((theme) => ({
         border: 0,
         borderRadius: 3,
         padding: '0 30px',
-        margin: '40px',
-        backgroundColor: 'lightblue',
+        // backgroundColor: 'lightblue',
         fontSize: 20,
         width: '975px',
 
@@ -26,16 +25,19 @@ const useStyles = makeStyles((theme) => ({
         marginRight: '500px',
         marginTop: '20px',
         marginBottom: '20px',
-
-        fontSize: '75px',
+        fontSize: '45px',
     },
 
     image: {
         height: '300px',
         width: '300px',
+        float: 'left',
+    },
 
-
+    blurb: {
+        textAlign: 'justify',
     }
+
 }));
 
 
@@ -52,16 +54,18 @@ function About() {
 
                 <div className={classes.root}>
 
+
+                
                     <Card className={classes.image}>
-                        <Image src="https://www.atlantawatershed.org/wp-content/uploads/2017/06/default-placeholder.png" />
+                        <Image src="/assets/images/portrait.jpg"/>
                     </Card>
 
-                    <Typography paragraph>
+                    <Typography paragraph className={classes.blurb}>
                         I'm currently working on my Full Flex Stack Certification. On weekends I work as a line-cook at a collectively managed restaurant, the New Moon Cooperative Cafe. Aside from my duties as cook, I engage in the back-end of our business management. I have fulfilled tasks related to every department of the cafe.
 
                     </Typography>
 
-                    <Typography paragraph>
+                    <Typography paragraph className={classes.blurb}>
                         This work has inspired a segue into web development. I thrive in collaborative and dynamic work settings. I am looking to expand my skills and creative outlets, and am looking for unique collaborative opportunies. I look forward to an eventual transition into full-time web development work.
 
                     </Typography>

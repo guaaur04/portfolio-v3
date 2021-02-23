@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import {purple } from '@material-ui/core/colors';
-// import './style.css'
+import './style.css'
 
 function Copyright() {
   return (
@@ -32,7 +32,9 @@ const useStyles = makeStyles((theme) => ({
 //   },
   footer: {
     padding: theme.spacing(1, 1),
-    marginTop: 'auto',
+    marginTop: '0 auto -50px',
+    minHeight: '100%',
+
     color: theme.palette.getContrastText(purple[500]),
     backgroundColor: purple[500],
     '&:hover': {
