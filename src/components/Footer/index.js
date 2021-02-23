@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import {purple } from '@material-ui/core/colors';
+import { blue } from '@material-ui/core/colors';
 import './style.css'
 
 function Copyright() {
@@ -34,10 +34,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '0 auto -50px',
     paddingBottom: '2.5 rem',
     minHeight: '100vh',
-    color: theme.palette.getContrastText(purple[600]),
-    backgroundColor: purple[600],
+    color: theme.palette.getContrastText(blue[800]),
+    backgroundColor: blue[800],
     '&:hover': {
-      backgroundColor: purple[700],
+      backgroundColor: blue[900],
     },
   },
 }));
@@ -50,9 +50,13 @@ export default function StickyFooter() {
       <CssBaseline />
       <footer className={classes.footer}>
         <Container maxWidth="sm">
-          <Typography variant="body1">Auricia V Guardado</Typography>
+          <Typography variant="body1">Auricia V Guardado 👨🏾‍💻 </Typography>
           <Typography variant="body2">auricia.guardado@gmail.com</Typography>
           <Copyright />
+          <Typography variant="body3">Powered by React and Material UI</Typography>
+        </Container>
+        <Container>
+        <Typography variant="body3">"A lost ship, steered by tired, seasick sailors, can still be guided to port." ― Assata Shakur</Typography>
         </Container>
       </footer>
     </div>

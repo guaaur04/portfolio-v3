@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import FavoriteIcon from '@material-ui/icons/GitHub';
 import ShareIcon from '@material-ui/icons/Link';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { makeStyles} from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import "./style.css";
 
 
@@ -23,13 +23,13 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     boxShadow: '0 3px 6px #999, 0 3px 6px #999',
     textAlign: 'left',
-
+    justifyContent: 'center',
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
-  
+
   expand: {
     transform: 'rotate(0deg)',
     marginLeft: 'auto',
@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
+  
 
 }));
 
@@ -52,47 +53,47 @@ export default function RecipeReviewCard(props) {
   };
 
   return (
-    <Card className={classes.root}>
-      <CardHeader
-        title={props.name}
-        subheader="Language Learning Application"
-      />
-      <CardMedia
-        className={classes.media}
-        image={'../assets/images/kanji_study_app.png'}
-        title="Study Kanji"
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-        Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="Github" href="https://github.com/desasser/Japanese-Study-App">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="Live Site" href="https://desasser.github.io/Japanese-Study-App/">
-          <ShareIcon />
-        </IconButton>
-        <IconButton
-          className={(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Typography paragraph>
-          Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language
+        <Card className={classes.root}>
+          <CardHeader
+            title={props.name}
+          />
+          <CardMedia
+            className={classes.media}
+            image={props.image}
+            title="Study Kanji"
+          />
+          <CardContent>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {props.description}
+            </Typography>
+          </CardContent>
+          <CardActions disableSpacing>
+            <IconButton aria-label="Github" href={props.github}>
+              <FavoriteIcon />
+            </IconButton>
+            <IconButton aria-label="Live Site" href={props.live}>
+              <ShareIcon />
+            </IconButton>
+            <IconButton
+              className={(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardActions>
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography paragraph>
+                Next time you're here, there will be even more info.
           </Typography>
-        </CardContent>
-      </Collapse>
-    </Card>
+            </CardContent>
+          </Collapse>
+        </Card>
+
 
 
   );

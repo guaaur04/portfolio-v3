@@ -18,13 +18,14 @@ const useStyles = makeStyles((theme) => ({
         // backgroundColor: 'lightblue',
         fontSize: 20,
         width: '975px',
+        color: 'black',
 
     },
     title: {
         marginLeft: '500px',
         marginRight: '500px',
         marginTop: '20px',
-        marginBottom: '20px',
+        marginBottom: '5px',
         fontSize: '45px',
     },
 
@@ -33,11 +34,15 @@ const useStyles = makeStyles((theme) => ({
         width: '300px',
         float: 'left',
         marginRight: '5px',
+
     },
 
     blurb: {
         textAlign: 'justify',
-    }
+        fontSize:'15px',
+        color: 'black',
+        fontWeight: 'bold',
+    },
 
 }));
 
@@ -52,17 +57,17 @@ function About() {
 
                 {/* Here I will render my column details */}
                 <h1 className={classes.title}>Welcome</h1>
-
+                <Aside />
                 <div className={classes.root}>
 
 
                 
                     <Card className={classes.image}>
-                        <Image src="/assets/images/portrait.jpg"/>
+                        <Image src='./images/portrait.jpg'/>
                     </Card>
 
                     <Typography paragraph className={classes.blurb}>
-                        I'm currently working on my Full Flex Stack Certification. On weekends I work as a line-cook at a collectively managed restaurant, the New Moon Cooperative Cafe. Aside from my duties as cook, I engage in the back-end of our business management. I have fulfilled tasks related to every department of the cafe.
+                        I'm currently working on my Full Flex Stack Certification at the University of Washington Trilogy Bootcamp. On weekends I work as line-cook at a collectively managed restaurant, the New Moon Cooperative Cafe. Aside from my duties as cook, I engage in the back-end of our business management. I have fulfilled tasks related to every department of the cafe.
 
                     </Typography>
 
@@ -71,13 +76,12 @@ function About() {
 
                     </Typography>
 
-                    <Typography paragraph>
-                        I am interested work that challenges the status quo by empowering people to build alternative economic models (cooperatives, small businesses, free-lances, and related networks), and mental health and addiction support.
+                    <Typography paragraph className={classes.blurb} >
+                        I am interested in work that challenges the status quo by empowering people to build alternative economic models (cooperatives, small businesses, free-lancers, and related networks). 
                     </Typography>
 
                 </div>
 
-                <Aside />
                 <div> <Footer /> </div>
 
             </Wrapper>

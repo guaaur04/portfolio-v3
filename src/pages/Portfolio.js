@@ -3,9 +3,10 @@ import React from "react";
 import Nav from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import ProjectCard from "../components/ProjectCard";
+import Footer from "../components/Footer";
 import projects from "../projects.json";
 import { makeStyles } from '@material-ui/core/styles';
-import { render } from "@testing-library/react";
+
 
 // import { makeStyles, withStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 // const useStyles = makeStyles
@@ -18,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '20px',
         fontSize: '45px',
     },
+
 }));
 
 function Portfolio() {
@@ -36,12 +38,15 @@ function Portfolio() {
                     id={project.id}
                     key={project.id}
                     name={project.name}
-                    project={project.image}
+                    image={project.image}
                     description={project.description}
                     github={project.github}
                     live={project.live}
                     />
-                    ))}               
+                    ))}   
+
+                    <div> <Footer /> </div>   
+
             </Wrapper>
         </div>
     );

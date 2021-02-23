@@ -3,6 +3,8 @@ import Nav from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import Aside from "../components/Aside";
+import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 // import { makeStyles, withStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -15,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '20px',
         fontSize: '45px',
     },
+
+    center:{
+        marginLeft: '500px',
+    }
 }));
 
 function Contact() {
@@ -30,10 +36,12 @@ function Contact() {
 
                 <div>
 
-                   
-            <ContactForm />
-    
-                    
+               
+        <Typography classname ={classes.center} variant="body3">Contact me via E-mail, Github or LinkedIn!</Typography>  
+
+        <Aside />    
+            {/* <ContactForm /> */}
+        
                 </div>
 
 

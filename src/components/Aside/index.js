@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: purple[700],
       width: '100%',
-      float: 'right',
     },
   }
 
@@ -33,9 +32,8 @@ export default function GroupOrientation() {
     <div className={classes.root}>
 
       <ButtonGroup
-        orientation="vertical"
         color="primary"
-        aria-label="vertical contained primary button group"
+        aria-label="contained primary button group"
         variant="text"
       >
         <IconButton className={classes.icons} aria-label="Github" href="https://github.com/guaaur04">

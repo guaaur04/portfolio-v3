@@ -4,6 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Send';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
@@ -13,6 +14,10 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: '100px',
     },
   },
+
+  send : {
+    width: '10ch',
+  }
 }));
 
 export default function BasicTextFields() {
@@ -24,10 +29,13 @@ export default function BasicTextFields() {
       <TextField id="standard-basic" label="Email" />
       <TextField id="standard-basic" label="Message" />
 
-      <IconButton
-          >
-            <MenuIcon />
+      <div>
+
+      <IconButton>
+            <MenuIcon className ={classes.send} />
       </IconButton>
+
+      </div>
 
     </form>
   );
