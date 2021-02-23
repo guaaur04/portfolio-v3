@@ -13,8 +13,9 @@ import { render } from "@testing-library/react";
 function Portfolio() {
     return (
         <div>
-            <Nav />
+            
             <Wrapper>
+            <Nav />
 
                 {/* <Grid /> */}
                 <h1>Projects </h1>

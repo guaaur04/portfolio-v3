@@ -11,8 +11,9 @@ import Footer from "../components/Footer";
 function Contact() {
     return (
         <div>
-            <Nav />
+           
             <Wrapper>
+            <Nav />
 
                 {/* Here I will render my column details */}
                 <h1> Contact </h1>

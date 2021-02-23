@@ -11,18 +11,25 @@ import FavoriteIcon from '@material-ui/icons/GitHub';
 import ShareIcon from '@material-ui/icons/Link';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { makeStyles} from '@material-ui/core/styles';
-// import "./style.css";
+import "./style.css";
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     backgroundColor: 'lightblue',
+    borderRadius: '10px',
+    margin: '2rem',
+    position: 'relative',
+    boxShadow: '0 3px 6px #999, 0 3px 6px #999',
+    textAlign: 'left',
+
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  
   expand: {
     transform: 'rotate(0deg)',
     marginLeft: 'auto',

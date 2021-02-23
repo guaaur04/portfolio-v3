@@ -43,13 +43,12 @@ function About() {
     const classes = useStyles();
     return (
         <div>
-            <Nav />
             <Wrapper>
+
+                <Nav />
 
                 {/* Here I will render my column details */}
                 <h1 className={classes.title}>Welcome</h1>
-
-
 
                 <div className={classes.root}>
 
@@ -63,23 +62,21 @@ function About() {
                     </Typography>
 
                     <Typography paragraph>
-                    This work has inspired a segue into web development. I thrive in collaborative and dynamic work settings. I am looking to expand my skills and creative outlets, and am looking for unique collaborative opportunies. I look forward to an eventual transition into full-time web development work.
+                        This work has inspired a segue into web development. I thrive in collaborative and dynamic work settings. I am looking to expand my skills and creative outlets, and am looking for unique collaborative opportunies. I look forward to an eventual transition into full-time web development work.
 
                     </Typography>
 
                     <Typography paragraph>
-                    I am interested work that challenges the status quo by empowering people to build alternative economic models (cooperatives, small businesses, free-lances, and related networks), and mental health and addiction support.
+                        I am interested work that challenges the status quo by empowering people to build alternative economic models (cooperatives, small businesses, free-lances, and related networks), and mental health and addiction support.
                     </Typography>
 
                 </div>
 
                 <Aside />
-
+                <div> <Footer /> </div>
 
             </Wrapper>
 
-
-            <div> <Footer /> </div>
 
         </div>
 

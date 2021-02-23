@@ -4,7 +4,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, withStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import Button from '@material-ui/core/Button';
 import { green, purple } from '@material-ui/core/colors';
 
@@ -22,13 +21,21 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'flex-start',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
+    marginLeft: '35px',
+
   },
   title: {
     flexGrow: 1,
-    alignSelf: 'flex-end',
+    alignSelf: 'center',
+    fontSize: '50px',
+    fontFamily :'Roboto',
+    textShadow: '0px 2px 4px lightpurple'
+    
   },
   margin: {
-    margin: theme.spacing(1)
+    margin: theme.spacing(1),
+    marginTop: '30px',
+
   },
 }));
 
@@ -60,16 +67,7 @@ export default function ProminentAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar className={classes.toolbar}>
-          {/* This is where the burger bar icon lives  */}
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
-          
+          {/* This is where the burger bar icon lives  */} 
           <Typography className={classes.title} variant="h5" noWrap>
             V Guardado
           </Typography>
